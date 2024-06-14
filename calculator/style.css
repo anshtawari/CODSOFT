@@ -1,0 +1,56 @@
+.calci{
+    height:405px;
+    width:276px;
+    margin-left:40%;
+    margin-top:10%;
+    padding:7px;
+    border:2px solid black;
+    border-radius:1%;
+
+
+}
+.display{
+    width:276px;
+    height:80px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color:white;
+    font-weight: bold;
+    font-size:30px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end; 
+}
+.the-buttons{
+    width:280px;
+    height:320px;
+    margin-left:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+button{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    font-size:medium;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.966);
+    color:white;
+    opacity:1
+}
+
+button:hover{
+    opacity:0.7 ;
+}
+button:active{
+    height:59px;
+    width:59px;
+}
+#equal{
+    width:120px;
+    border-radius:10%;
+    background-color:green;
+}
+.oprator{
+    background-color:rgb(255, 145, 0)
+}
