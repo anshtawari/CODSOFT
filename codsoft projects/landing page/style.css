@@ -1,0 +1,323 @@
+*{
+    font-family: "Montserrat",sans-serif;
+}
+body{
+    margin-top: 15px;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+     display:flex;
+     height:70px;
+     width:100%;
+     align-items: center;
+}
+.nav_logo{
+    background-image: url(logo.png);
+    background-size:cover;
+    height:65px;
+    width:75px;
+    margin-left:10px;
+    margin-right:100px;
+}
+.nav_links{
+    display:flex;
+    height:65px;
+    width:370px;
+    align-items:center;
+    justify-content: space-between;
+    padding-left:40px;
+    padding-right:145px;
+}
+.nav_links a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.nav_links a:hover{
+    text-decoration:underline;
+    color:rgba(255, 255, 255, 0.856);
+}
+.search_bar input{
+    font-size:17px;
+    height:25px;
+    border:none;
+    outline: none;
+    padding-right:20px;
+}
+
+.search_bar{
+    display:flex;
+    align-items:center;
+    background-color:white;
+    border:none;
+    width:280px;
+    height:42px;
+    padding-left:20px;
+    border-radius:2rem;
+    margin-right:100px;
+
+}
+.login_bar{
+    height:45px;
+    width:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1.2rem;
+    font-size:19px;
+    color:white;
+    background-color:#00605f;
+    border-radius:2rem;
+}
+.login_bar:active{
+    opacity:0.8;
+}
+.login_bar span{
+    height:33px;
+    width:33px;
+    color:#00605f;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:2rem;
+}
+.bg_01{
+    position:absolute;
+    left:450px;
+    top:90px;
+    z-index:-1;
+    opacity:0.8;
+}
+.line_box{
+    height:240px;
+    width:1px;
+    border:1px solid white;
+    background-color:white;
+    position:relative;
+    top:50px;
+    left:30px;
+}
+.socials{
+    position:relative;
+    top:100px;
+    left:15px;
+    display:flex;
+    flex-direction: column;
+    height:300px;
+    width:30px;
+    gap:1rem;
+    font-size:33px;
+}
+.socials a{
+    text-decoration:none;
+    color:white;
+}
+.baner_heading{
+    position:absolute;
+    top:185px;
+    left:95px;
+    color:white;
+    font-size:74px;
+    font-weight:bolder
+}
+.baner_heading p{
+    font-size:20px;
+    font-weight: 70;
+    margin-bottom:27px;
+}
+.baner_heading button{
+    position:absolute;
+    padding:10px 33px 10px 33px;
+    color:white;
+    background-color:#00605f;
+    border:1px solid white;
+    opacity:0.9;
+}
+ .destinations_box{
+    position: absolute;
+    top:168px;
+    left:622px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    
+}
+.box{ 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:470px;
+    width:215px;
+    background-color:white;
+    margin:0px 10px 0px 10px;
+}
+.box p{
+    color:grey;
+}
+.box button{
+    background-color:#00605f;
+    border:none;
+    color:white;
+    padding:5px 10px 5px 10px;
+}
+
+#img01{
+    height:168px;
+    width:215px;
+    background-image:url(destination-1.jpg);
+    background-size:cover;
+}
+#img02{
+    height:168px;
+    width:215px;
+    background-image:url(destination-2.jpg);
+    background-size:cover;
+}
+#img03{
+    height:168px;
+    width:215px;
+    background-image:url(destination-3.jpg);
+    background-size:cover;
+}
+.content3{
+    padding-left:20px;
+}
+.wrapper{
+    position:absolute;
+    top:150px;
+    left:400px;
+    width:400px;
+    height:440px;
+    background:transparent;
+    border:2px solid rgba(255, 255, 255, 0.5);
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    box-shadow:0 0 30px rgba(0 0 0 .5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    transform:scale(0);
+    transition: transform .3s ease;
+}
+.wrapper.active-popup{
+    transform:scale(1);
+}
+.close_icon{
+    position:absolute;
+    top:0;
+    right:0;
+    width:45px;
+    height:45px;
+    background-color:black;
+    font-size:2em;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom-left-radius:20px;
+    cursor:pointer;
+    z-index:1
+}
+.login_pagr{
+    width:100%;
+    padding:40px;
+}
+.login_page h2{
+    color:black;
+    text-align:center;
+    font-size:2rem;
+}
+.email_icon{
+    position:relative;
+    width:100%;
+    height:50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.email_icon label{
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    font-size:1em;
+    color:black;
+    font-weight:500;
+    pointer-events:none;
+    transition: 0.5s;
+    top:5px;
+}
+/* .email_icon input:focus~label,   /*had to look out dont understanfd8
+.email_icon input:valid~label{
+    top:5px;
+} */
+.email_icon input{
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:1em;
+    color:black;
+    font-weight:600;
+    padding:0 35px 0 5px
+}
+.email_icon i{
+    position:absolute;
+    right:8px;
+    color:black;
+    font-size:1.2em;
+    line-height:57px;
+}
+.remember_forget{
+    font-size:0.5em;
+    font-weight:500;
+    color:black;
+    margin:-15px 0 15px;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+}
+.remember_forget input label{
+    accent-color: black;
+    margin-right:3px;
+}
+.remember_forget a{
+    text-decoration:none;
+    color:black;
+}
+.remember_forget a:hover{
+    text-decoration:underline;
+}
+.login_button{
+    width:100%;
+    height:45px;
+    background:black;
+    border:none;
+    outline:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:1em;
+    color:white;
+    font-weight:500;
+}
+.register_link{
+    font-size:0.9em;
+    color:black;
+    text-align:center;
+    font-weight:500;
+    margin:25px 0 10px;
+}
+.register_link p a{
+    color:black;
+    text-decoration:none;
+    font-weight:600;
+}
+.register_link p a:hover{
+    text-decoration:unerline;
+}
+
+

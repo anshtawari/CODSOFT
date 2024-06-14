@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh-Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.google.com/share?selection.family=Vesper+Libre:wght@400;500;700;900">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ansh portfolio</div>
+            <div class="left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>      
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="black">Ansh</span>
+                <div>and I am a passionate.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/ansh.jpg" alt="Profile picture of Ansh">
+            </div>
+        </section>
+
+        <section class="secondSection" id="projects">
+            <span class="text-violet">What I have Done So Far</span>
+            <h1>Project Experience</h1>
+            <div class="projectSection">
+                <div class="project">
+                    <h2>Python Quiz app</h2>
+                    <p>A virtual python quiz app developed in Python to help with daily learning tasks.</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="project">
+                    <h2>Expanse Tracker</h2>
+                    <p>To help individual To monitor and manage their spending, By tracking expenses user can gain valiable insights into their financial habit identify areas for potential cost saving .</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="project">
+                    <h2>Web Development</h2>
+                    <p>Responsive and interactive websites built with modern technologies using HTMl,CSS,JAVASCRIPT.</p>
+                    <a href="#">View Details</a>
+            </div>
+        </section>
+
+        <section class="aboutSection" id="about">
+            <h1>About Me</h1>
+            <p>Hello! I'm Ansh Tawari, a versatile developer with a passion for technology and creativity. I specialize in
+                Python programming,Javascipt,C programing. With a knack for problem-solving and a love for
+                innovation, I enjoy bringing ideas to life through code and design. When I'm not coding, you can find me
+                exploring new technologies, capturing life moments,or palying one of india's favorite sport football.</p>
+        </section>
+        <div class="the-box"></div>
+        <section class="servicesSection" id="services">
+            <div class="container">
+                <h1>Services</h1>
+                <div class="services">
+                    <div class="service">
+                        <h2>Web Development</h2>
+                        <p> Creating websites and web application that are accesible and functional on the internet.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h2>Graphic Design</h2>
+                        <p>Designing eye-catching graphics for web, print, and social media.</p>
+                    </div>
+                    <div class="service">
+                        <h2>Video editing</h2>
+                        <p>editing high-quality videos.</p>
+                    </div>
+                    <div class="service">
+                        <h2>App development</h2>
+                        <p>Creating cross-platform mobile applications with intuitive interfaces and robust functionality..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillsSection" id="skills">
+            <div class="container">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="icon">
+                            <img src="images/c img.jpg" alt="Python Icon">
+                        </div>
+                        <h2>C</h2>
+                        <p>Proficient in C programming language.</p>
+                    </div>
+                    <div class="skill">
+                        <div class="icon">
+                            <img src="images/javascript img.jpg" alt="Motion Design Icon">
+                        </div>
+                        <h2>Javascript</h2>
+                        <p>Proficiant in Javascript programming language.</p>
+                    </div>
+                    <div class="skill">
+                        <div class="icon3" >
+                            <img src="images/python img.jpg" alt="Video Editor Icon">
+                        </div>
+                        <h2>Python</h2>
+                        <p>Proficient in python programming language.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="logo">PORTFOLIO</div>
+                    <ul class="social-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <p>&copy;All rights reserved 2024</p>
+            </div>
+        </footer>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['C programer', 'Web Developer','Python programer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+</html>
